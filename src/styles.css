@@ -1,0 +1,88 @@
+.content{
+    display: flex;
+    max-width: 1000px;
+    min-width: 650px;
+    margin: auto;
+    background-color: #F3F2EF;
+  }
+.btn{
+    margin-right: 10px;
+}
+
+.mat-card{
+    border-radius: 32px;
+    margin: 10px 10px;
+    padding: 20px;
+    border-color: #0a66c2;
+}
+
+.mat-card#first-card{
+    padding: 0;
+}
+div#profile-background img {
+    width: 100%;
+    border-radius: 32px 32px 0 0;
+}
+
+.profile-image{
+    border-radius: 50%;
+    width: 152px;
+    height: 152px;
+    margin-top: -110px;
+    z-index: 1;
+}
+.logo-image{
+    float: left;
+    width: 10%;
+    height: 10%;
+    padding-right: 10px;
+}
+div#info-actions{
+    display: flex;
+}
+ul#info-details {  
+    float: right;
+    list-style-type: none;
+}
+.info-details-img {
+    width: 10%;
+    height: 10%;        
+    float: right;
+    padding-left: 10px;    
+    margin-right: 90px;
+}
+
+div h2{
+    margin-left: 5px;
+} 
+
+.btn-right{
+    float: right;
+} 
+.float-left{
+    float: left;
+} 
+.float-right{
+    float: right;
+} 
+.items-list{
+    list-style-type: none;
+}
+h4.black-bold{
+    color: black;
+    font-weight: bold;
+}
+h5.black{
+    color: black;
+}
+h6.grey{
+    color: grey;
+    line-height: 10px;
+}
+h6.black{
+    color: black;
+    float: right;
+}
+.no-wrap{
+    white-space: nowrap;
+}

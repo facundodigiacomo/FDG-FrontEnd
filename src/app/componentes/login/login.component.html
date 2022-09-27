@@ -1,0 +1,78 @@
+<div style="margin-top: 50px;">
+  <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+    <div class="form-outline form-white mb-4">
+      <input type="user" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg"
+        [(ngModel)]="nombreUsuario" name="nombreUsuario" required />
+      <label class="form-label" for="nombreUsuario">Usuario</label>
+    </div>
+
+    <div class="form-outline form-white mb-4">
+      <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" name="password"
+        required />
+
+      <label class="form-label" for="password">Contraseña</label>
+    </div>
+    <button class="btn btn-outline-dark btn-lg px-5" type="submit">
+      INGRESO
+    </button>
+  </form>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+<div style="margin-top: 50px;">
+    <form [formGroup]="form" (ngSubmit)="onEnviar($event)">
+
+        <div class="form-outline mb-4">
+            <label class="form-label">Email</label>
+            <input type="email" formControlName="email" 
+            [ngClass]="{'is-invalid': Email?.errors && (Email?.touched || Email?.dirty), 'is-valid':Email?.valid}"
+            class="form-control" />            
+            <div *ngIf="Email?.errors && Email?.touched">
+                <p *ngIf="Email?.hasError('required')" class="text-danger">
+                    El email es requerido.
+                </p>
+                <p *ngIf="Email?.hasError('email')" class="text-danger">
+                    El formato del email debe ser valido.
+                </p>
+            </div>
+        </div>
+    
+
+        <div class="form-outline mb-4">
+            <label class="form-label">Contraseña</label>
+            <input type="password" formControlName="password" 
+            [ngClass]="{'is-invalid': Password?.errors && (Password?.touched || Password?.dirty), 'is-valid':Password?.valid}"
+            class="form-control" />
+            <div *ngIf="Password?.errors && Password?.touched">
+                <p *ngIf="Password?.hasError('required')" class="text-danger">
+                    La contraseña es requerida.
+                </p>
+                <p *ngIf="Password?.hasError('minlength')" class="text-danger">
+                    La contraseña debe ser de 8 o mas caracteres.
+                </p>
+            </div>
+        </div>
+        
+
+        <button type="button" class="btn btn-primary btn-block mb-4">Iniciar Sesion</button>
+    
+    </form>
+</div>
+
+-->

@@ -1,0 +1,92 @@
+{
+    "name": "Facundo Di Giacomo",
+    "backImage": "./assets/data/img/background.png",
+    "image": "./assets/data/img/Profile.JPG",
+    "position": "Especialista en Industria 4.0",
+    "location": "Rosario, Argentina •  ",
+    "company": {
+        "name": "Codematica",
+        "img":  "./assets/data/img/codematica.png",
+        "url": "https://www.codematica.com/it/"
+    },
+    "school": {
+        "name": "UNR",
+        "img":  "./assets/data/img/unr.png",
+        "url": "https://unr.edu.ar/"
+    },
+
+
+    "education": [
+        {        
+            "school": "Universidad Nacional de Rosario",
+            "title": "Tecnico Universitario en Mecatronica",
+            "img": "./assets/data/img/unr.png",
+            "career": "",
+            "score": "8.92",
+            "start": "2012",
+            "end": "2017",            
+            "location": "Rosario, Argentina",
+            "url": "https://unr.edu.ar/"
+        },
+        {        
+            "school": "Liceo Superior de Cultura Inglesa",
+            "title": "English Teacher for Kids",
+            "img": "./assets/data/img/cabezal-azul-liceo.png",
+            "career": "",
+            "score": "",
+            "start": "2007",
+            "end": "2012",
+            "location": "Bs As, Argentina",
+            "url": ""
+        }          
+    ],
+    "experiencia": [
+        {        
+            "position": "Especialista en Automatización",
+            "company": "Codematica",
+            "img": "./assets/data/img/codematica.png",
+            "mode": "Indeterminado",
+            "start": "Jun - 2019",
+            "end": "Presente",
+            "timeLapse": "3 años y 3 meses",
+            "location": "PI, Italia",
+            "url": "https://www.codematica.com/it/"
+        },
+        {        
+            "position": "Coordinador de Entregas",
+            "company": "Bladkompagniet",
+            "img": "./assets/data/img/bladkom.png",
+            "mode": "Temporario",
+            "start": "Feb - 2019",
+            "end": "Jun - 2019",
+            "timeLapse": "5 meses",
+            "location": "CR, Dinamarca",
+            "url": ""
+        },
+        {        
+            "position": "Coordinador de Proyectos",
+            "company": "Inventu",
+            "img": "./assets/data/img/inventu.png",
+            "mode": "Tiempo Completo",
+            "start": "Set - 2016",
+            "end": "Dic - 2018",
+            "timeLapse": "2 años 4 meses",
+            "location": "SF, Argentina",
+            "url": "https://www.inventu.com.ar/"
+        },
+        {        
+            "position": "Lift Operator",
+            "company": "Tahoe Donner Association",
+            "img": "./assets/data/img/TahoeDonner.png",
+            "mode": "Work & travel",
+            "start": "Nov - 2015",
+            "end": "Apr - 2016",
+            "timeLapse": "6 meses",
+            "location": "CA, USA",
+            "url": ""
+        }
+        
+    ]
+
+
+}

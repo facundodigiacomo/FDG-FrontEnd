@@ -1,0 +1,224 @@
+<div class="card mat-card">
+    <div id="experience">
+        <div class="card-titles">
+            <h2 class="float-left">Experiencia</h2>
+            <div class="btn-edit">
+                <a class="btn btn-right">
+                    <button class="bi bi-plus-circle-fill"
+                        style="border: none; color: #0D6EFD; background-color: white;" routerLink="/nuevaexp"
+                        *ngIf="isLogged"></button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col lg 1"></div>
+            <div class="col-lg-11">
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let Experiencia of expe" style="border: white;">
+                            <div>
+                                <a [href]="" style="text-decoration: none;">
+                                    <div class="list-info">
+                                        <div>
+                                            <h4 class="black-bold">{{Experiencia.descripcionE}}</h4>
+                                            <h5 class="black">{{Experiencia.nombreE}}</h5>
+                                            <h6 class="grey"><time>{{Experiencia.mesE}}</time> -
+                                                <time>{{Experiencia.anoE}}</time>
+                                            </h6>
+                                            <h6 class="grey">{{Experiencia.lugarE}}</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <hr>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-edit"
+                                    style="color: white; background-color: #0D6EFD; float: right;"
+                                    routerLink="/editexp/{{Experiencia.id}}">
+                                    <i class="fa fa-pen"></i></button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-danger" (click)="deleteExp(Experiencia.id)">
+                                    <i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <hr style="border-width: 3px;">
+    <br>
+
+    <div id="education">
+        <div class="card-titles">
+            <h2 class="float-left">Educación</h2>
+            <div class="btn-edit">
+                <a class="btn btn-right">
+                    <button class="bi bi-plus-circle-fill"
+                        style="border: none; color: #0D6EFD; background-color: white;" routerLink="/nuevaedu"
+                        *ngIf="isLogged"></button>
+                </a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col lg 1"></div>
+            <div class="col-lg-11">
+                <table class="table">
+                    <tbody>
+                        <tr *ngFor="let Educacion of edu" style="border: white;">
+                            <div>
+                                <a [href]="" style="text-decoration: none;">
+                                    <div class="list-info">
+                                        <div>
+                                            <h4 class="black-bold">{{Educacion.descripcionE}}</h4>
+                                            <h5 class="black">{{Educacion.nombreE}}</h5>
+                                            <h6 class="grey"><time>{{Educacion.mesE}}</time> -
+                                                <time>{{Educacion.anoE}}</time>
+                                            </h6>
+                                            <h6 class="grey">{{Educacion.lugarE}}</h6>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <hr>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-edit"
+                                    style="color: white; background-color: #0D6EFD; float: right;"
+                                    routerLink="/editedu/{{Educacion.id}}">
+                                    <i class="fa fa-pen"></i></button>
+                            </td>
+                            <td *ngIf="isLogged">
+                                <button class="btn btn-danger" (click)="deleteEdu(Educacion.id)">
+                                    <i class="bi bi-trash-fill"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- FOR TEST-->
+<!--
+<div class="card mat-card">
+    <div id="experience">
+        <div class="card-titles">
+            <h2 class="float-left">Experiencia</h2> 
+            <div class="btn-edit">
+                <a class="btn-right"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+       <br>
+        <br>
+        <br>
+        <div>
+            <ul class="items-list">
+                <li *ngFor="let experience of experienceList">
+                    <div>
+                        <a [href]="experience.url" style="text-decoration: none;">
+                            <div>
+                                <img class="logo-image" [src]="experience.img"/>
+                            </div>
+                            <div class="list-info">
+                                <div>
+                                    <h4 class="black-bold">{{experience.position}}</h4>
+                                    <h5 class="black">{{experience.company}}</h5>
+                                    <h6 class="grey"><time>{{experience.start}}</time> - <time>{{experience.end}}</time></h6>
+                                    <h6 class="grey">{{experience.location}}</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <hr>
+-->
+<!-- <div class="data-control">
+                        <div class="btn-edit">
+                            <a class="btn-right"><i class="fa fa-pen"></i></a>
+                        </div>
+                    </div> -->
+<!--
+                </li>
+            </ul>                
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="education">
+        <div class="card-titles">
+            <h2 class="float-left">Educación</h2> 
+            <div class="btn-edit">
+                <a class="btn-right"><i class="fa fa-pen"></i></a>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div>
+            <ul class="items-list">
+                 <li *ngFor="let educacion of educacionList">
+                    <div>
+                        <a [href]="educacion.url" style="text-decoration: none;">
+                            <div>
+                                <img class="logo-image" [src]="educacion.img"/>
+                            </div>
+                            <div class="list-info">
+                                <div>
+                                    <h4 class="black-bold">{{educacion.school}}</h4>
+                                    <h5 class="black">{{educacion.title}}</h5>
+                                    <h6 class="grey"><time>{{educacion.start}}</time> - <time>{{educacion.end}}</time></h6>
+                                    <h6 class="grey">{{educacion.location}}</h6>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <hr>
+-->
+<!-- <div class="data-control">
+                        <div class="btn-edit">
+                            <a class="btn-right"><i class="fa fa-pen"></i></a>
+                        </div>
+                    </div> -->
+<!--
+                </li>
+            </ul>                
+        </div>
+    </div>
+</div>
+-->

@@ -1,0 +1,66 @@
+<div class="card mat-card">
+    <div class="row">
+        <div class="card-titles">
+            <h2 class="float-left">Skills</h2>
+            <div class="btn-edit">
+                <a class="btn btn-right">
+                    <button class="bi bi-plus-circle-fill"
+                        style="border: none; color: #0D6EFD; background-color: white;" routerLink="/newskill"
+                        *ngIf="isLogged"></button>
+                </a>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        
+        <div class="text-center col-sm-4 col-md-4 col-lg-4 circulo" *ngFor="let skill of skill">
+            <circle-progress 
+                [percent]="(skill.porcentaje)" 
+                [radius]="50" 
+                [title]="(skill.nombre)" 
+                [titleColor]="'#444444'"
+                [backgroundGradient]="true"
+                [backgroundColor]="'#ffffff'" 
+                [backgroundPadding]="-10"
+                [backgroundGradientStopColor]="'#c0c0c0'"
+                [showTitle]="true" 
+                [showImage]="false" 
+                [showUnits]="false" 
+                [showSubtitle]="false"
+                [showInnerStroke]="false"
+                [outerStrokeWidth]="7" 
+                [outerStrokeColor]="'#61A9DC'"
+                [outerStrokeGradientStopColor]="'transparent'"
+                [animation]="true" 
+                [animationDuration]="1000">
+            </circle-progress>  
+            
+            <div style="padding-top: 5px">
+                <td *ngIf="isLogged">
+                    <button class="btn btn-light" style="color: white; background-color: #0D6EFD;" routerLink="/editskill/{{skill.id}}">
+                        <i class="bi bi-pencil-fill"></i></button>
+                </td>
+                <td *ngIf="isLogged">
+                    <button class="btn btn-danger" (click)="delete(skill.id)">
+                        <i class="bi bi-trash-fill"></i></button>
+                </td>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--
+    <div class="container">
+        <h2 style="float: left;">Test </h2>
+        <div class="progress" style="margin-left: 150px; height:30px; width: 30%">
+            <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="10" aria-valuemin="0"
+                aria-valuemax="100" style="width:'(skill.porcentaje)'px">
+                test
+            </div>
+        </div>
+    </div>
+-->
+</div>
