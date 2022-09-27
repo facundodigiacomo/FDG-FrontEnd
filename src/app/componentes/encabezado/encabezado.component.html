@@ -1,14 +1,22 @@
 <div class="card mat-card" id="first-card">    
     <div id="profile-background" style="background-color: #F3F2EF;"><img [src]="miPorfolio.backImage"></div>     
-    <div>
-        <button type="button"  style="float: right; margin-top: 5px;" class="btn btn-outline-dark" (click)="login()" *ngIf="!isLogged">LOGIN</button>
-        <button type="button"  style="float: right; margin-top: 5px;" class="btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</button>
-    </div>        
+
+        <div>
+            <img class="logo-ap" src="./assets/data/img/AP-logo.png">
+            <a href="https://www.linkedin.com/in/facundo-di-giacomo/" style="margin-left: 20px;"><img class="logo-social" src="./assets/data/img/linkedin.png"></a>
+            <a href="https://twitter.com/facu_digiacomo"><img class="logo-social" src="./assets/data/img/twitter.png"></a>
+            <a href="https://www.instagram.com/facudigiacomo/"><img class="logo-social" src="./assets/data/img/instagram.png"></a>
+            
+            <button type="button"  style="float: right; margin-top: 5px; margin-bottom: 5px;" class="btn btn-outline-dark" (click)="login()" *ngIf="!isLogged">LOGIN</button>
+            <button type="button"  style="float: right; margin-top: 5px; margin-bottom: 5px;" class="btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">LOGOUT</button>
+        </div> 
+          
         <div id="info" style="padding: 16px">            
             <div id="info-img">                        
                 <img class="profile-image" [src]="miPorfolio.image">                
                 <!--<div class="btn-edit"><a class="btn btn-right"><i class="fa fa-pen"></i></a></div>-->
             </div>
+
             <div id="info-data">
                     <ul id="info-details">
                         <li><a [href]="miPorfolio.school.url" style="text-decoration: none;">
